@@ -98,19 +98,18 @@ export function GlobalOrb() {
 
       {/* The AI Robot Character */}
       <div 
-        className="relative w-full h-full pointer-events-none"
+        className="absolute inset-0 pointer-events-none overflow-hidden rounded-full"
         style={{
           opacity: 0.95,
-          // Mask out the corners to gracefully hide the Spline watermark without clipping the robot
-          WebkitMaskImage: 'radial-gradient(circle at center, black 65%, transparent 85%)',
-          maskImage: 'radial-gradient(circle at center, black 65%, transparent 85%)'
+          // A tighter mask to hide the bottom right corner specifically
+          WebkitMaskImage: 'radial-gradient(circle at center, black 50%, transparent 75%)',
+          maskImage: 'radial-gradient(circle at center, black 50%, transparent 75%)'
         }}
       >
         <iframe 
           src="https://my.spline.design/genkubgreetingrobot-UANgTpxP2tIMF3f6b10PJy2L/"
           frameBorder="0"
-          width="100%"
-          height="100%"
+          className="absolute w-[130%] h-[130%] -left-[15%] -top-[15%]"
           style={{ 
             border: 'none', 
             background: 'transparent', 
