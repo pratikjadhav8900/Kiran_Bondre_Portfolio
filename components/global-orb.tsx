@@ -76,7 +76,7 @@ export function GlobalOrb() {
 
   return (
     <motion.div
-      className="fixed z-40 pointer-events-none w-[120vw] h-[120vw] md:w-[600px] md:h-[600px]"
+      className="fixed z-40 pointer-events-none w-[250px] h-[250px] md:w-[600px] md:h-[600px]"
       style={{
         x: smoothX,
         y: smoothY,
