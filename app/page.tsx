@@ -5,7 +5,6 @@ import { AnimatePresence } from 'framer-motion'
 import { SmoothScrollProvider } from '@/components/smooth-scroll-provider'
 import { CinematicLoader, SpotlightCursor } from '@/components/cinematic-effects'
 import { CosmicBackground } from '@/components/cosmic-background'
-import { GlobalOrb } from '@/components/global-orb'
 import { Navigation } from '@/components/navigation'
 import { HeroSection } from '@/components/hero-section'
 import { BusinessImpactSection } from '@/components/business-impact-section'
@@ -34,7 +33,6 @@ export default function Home() {
 
       {/* Global Cosmic Environment */}
       <CosmicBackground />
-      <GlobalOrb />
 
       {/* Navigation */}
       <Navigation />
