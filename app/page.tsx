@@ -36,15 +36,15 @@ export default function Home() {
       <CosmicBackground />
       <GlobalOrb />
 
+      {/* Navigation */}
+      <Navigation />
+
       {/* Main content */}
       <div className={`relative min-h-screen transition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
         <SpotlightCursor />
         
         {/* Noise overlay for texture */}
         <div className="noise-overlay" />
-
-        {/* Navigation */}
-        <Navigation />
 
         {/* Main sections */}
         <main>
